@@ -19,7 +19,7 @@ namespace DatabaseConnection1.Pages.Students
 
         public IActionResult OnPost()
         {
-            string DbConnection = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DatabaseConnection1;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            string DbConnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\zairu\source\repos\Week8A\DatabaseConnection1\Data\DatabaseConnection1.mdf;Integrated Security=True;Connect Timeout=30";
 
             SqlConnection conn = new SqlConnection(DbConnection);
             conn.Open();
